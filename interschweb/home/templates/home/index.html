@@ -1,0 +1,179 @@
+{% extends 'home/layout.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  국제학교 학생들만을 위한 온라인 과외 선생님 - 인터스쿨
+{% endblock %}
+
+{% block content %}
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">
+            메인 배너<br>Carousel로 바꿉시다~ 4개 정도?
+            <div class="col-md-5 col-lg-8 col-xl-7 mx-auto">
+              <button type="submit" class="btn btn-block btn-lg btn-primary">버튼 하나 넣고</button>
+            </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Icons Grid - Student -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <h2 class="mb-5">For Student</h2>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <h3>단어장 / 단어시험</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <h3>숙제 첨삭</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <h3>입시 정보</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <h3>실시간 Q&A</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Icons Grid - Parent -->
+    <section class="features-icons bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="mb-5">For Parent</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <h3>화상 상담</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <h3>학교 공지문 번역</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <h3>1:1 통역 서비스</h3>
+              <p class="lead mb-0">서비스에 대한 상세 설명. 블라블라블라블라블라블라블라라랄라랄라랄</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to use -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>이용방법</h2>
+            <p class="lead mb-0">상세 가격과 할인가를 알아보고 싶다면 클릭하세요.</p>
+            <p class="lead mb-0">오른쪽 이미지는 동영상으로 바꿀 예정~</p>
+            <div class="col-12 col-md-5 mx-auto">
+              <button type="submit" class="btn btn-block btn-lg btn-primary">화상 상담 신청하기</button>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static 'img/bg-showcase-1.jpg' %}');">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who make this -->
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">선생님 소개</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src='{% static "img/testimonials-1.jpg" %}' alt="">
+              <h5>Amy K.</h5>
+              <p class="font-weight-light mb-0">"하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕."</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src='{% static "img/testimonials-2.jpg" %}' alt="">
+              <h5>Chloe K.</h5>
+              <p class="font-weight-light mb-0">"하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕.하이 헬로 안녕."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counsel Request -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">상담 신청</h2>
+        </div>
+        <form>
+          <div class="col-lg-6 mx-auto">
+            <div class="mb-2 mb-md-1">
+              <input type="text" class="form-control form-control-lg" placeholder="학부모님의 성함">
+            </div>
+            <div class="mb-2 mb-md-1">
+              <input type="text" class="form-control form-control-lg" placeholder="카카오톡 아이디">
+            </div>
+            <div class="mb-2 mb-md-1">
+              <input type="text" class="form-control form-control-lg" placeholder="연락가능한 전화번호">
+            </div>
+            <div class="mb-2 mb-md-1">
+              <input type="text" class="form-control form-control-lg" placeholder="자녀의 학교 이름">
+            </div>
+          </div>
+          <div class="col-lg-6 mx-auto mb-md-4">
+              <textarea type="text" class="form-control form-control-lg" rows="5" placeholder="메세지 내용"></textarea>
+          </div>
+          <div class="col-12 col-md-3 mx-auto">
+            <button type="submit" class="btn btn-block btn-lg btn-primary">화상 상담 신청하기</button>
+          </div>
+        </form>
+      </div>
+    </section>
+{% endblock %}

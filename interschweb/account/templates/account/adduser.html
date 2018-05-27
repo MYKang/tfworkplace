@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+{% load staticfiles %}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+		<title>푸마시-좋은 일손과 좋은 일자리를 연결합니다.</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href='{% static "dist/css/bootstrap.min.css" %}' rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href='{% static "login/signin.css" %}' rel="stylesheet">
+	</head>
+
+	<body>
+		<form method="POST" action="{% url 'account:signup' %}" class="sign-up-form">
+		  {%csrf_token%}
+		  <h2 class="sub-title"> 회원가입 </h2>
+		  {% for field in form %}
+		      <div class="form-group">
+		        {{ field.label }}
+		        {{ field }}
+		      </div>
+		  {% endfor %}
+		  <!-- {{ form.username }} -->
+		  <button type="submit" class="save btn btn-success">회원가입</button>
+		  <a href="{% url 'home:main' %}">
+		    <button type="button" class="btn btn-danger">취소</button>
+		  </a>
+		</form>
+	</body>
